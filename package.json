@@ -1,0 +1,28 @@
+{
+  "name": "quadratic-solver",
+  "version": "0.0.1",
+  "description": "Quadratic Equation Solver",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudiptog81/quadratic-solver.git"
+  },
+  "keywords": [
+    "quadratic",
+    "equation",
+    "solver",
+    "mathematics"
+  ],
+  "author": "Sudipto Ghosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudiptog81/quadratic-solver/issues"
+  },
+  "homepage": "https://github.com/sudiptog81/quadratic-solver#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
