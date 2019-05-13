@@ -34,4 +34,6 @@ const QuadSolverCitardauq = (a, b, c) => {
   }
 };
 
-module.exports = { QuadSolver, QuadSolverCitardauq };
+const GetVersion = () => `quadratic-solver v${require("./package.json").version}`;
+
+module.exports = { QuadSolver, QuadSolverCitardauq, GetVersion };

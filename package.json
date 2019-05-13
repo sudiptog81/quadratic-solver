@@ -1,6 +1,6 @@
 {
   "name": "quadratic-solver",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Quadratic Equation Solver",
   "main": "main.js",
   "scripts": {
@@ -25,5 +25,13 @@
   "devDependencies": {
     "jest": "^24.8.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    ".gitignore",
+    "LICENSE.md",
+    "main.js",
+    "main.test.js",
+    "package.json",
+    "README.md"
+  ]
 }
