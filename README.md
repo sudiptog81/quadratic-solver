@@ -14,6 +14,8 @@ const rootsArr = QuadSolver(2, 5, -3);
 rootsArr.map(root => console.log(`Root: ${root}`));
 ```
 
+_Note: Citardauq formula available as `QuadSolverCitardauq()`_
+
 ## Author
 
-Sudipto Ghosh [sudipto.ghosh.pro](https://sudipto.ghosh.pro)
+Sudipto Ghosh ([sudipto.ghosh.pro](https://sudipto.ghosh.pro))
