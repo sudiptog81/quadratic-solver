@@ -1,7 +1,11 @@
 /* eslint-disable no-unused-vars */
 
-const { QuadSolver } = require("./main");
+const { QuadSolver, QuadSolverCitardauq } = require("./main");
 
-test("Roots are correct", () => {
+test("Standard Quadratic Equation", () => {
   expect(QuadSolver(2, 5, -3)).toStrictEqual([0.5, -3]);
+});
+
+test("Citardauq Quadratic Equation", () => {
+  expect(QuadSolverCitardauq(2, 5, -3)).toStrictEqual([0.5, -3]);
 });

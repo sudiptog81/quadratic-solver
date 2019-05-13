@@ -1,5 +1,7 @@
 # Quadratic Equation Solver
 
+[![Build Status](https://ci.ghosh.pro/api/badges/sudipto/quadratic-solver/status.svg)](https://ci.ghosh.pro/sudipto/quadratic-solver)
+
 This NodeJS module brings the ability of finding roots of a quadratic equation by simply requiring it :)
 
 ## Example Usage
