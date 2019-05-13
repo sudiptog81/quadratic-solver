@@ -5,10 +5,9 @@ This NodeJS module brings the ability of finding roots of a quadratic equation b
 ## Example Usage
 
 ```js
-import { QuadSolver } from "quadratic-solver";
+const { QuadSolver } = require("quadratic-solver");
 
-const radius = 1;
-const rootsArr = QuadSolver(radius);
+const rootsArr = QuadSolver(2, 5, -3);
 
 rootsArr.map(root => console.log(`Root: ${root}`));
 ```
