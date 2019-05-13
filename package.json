@@ -24,5 +24,6 @@
   "homepage": "https://git.ghosh.pro/sudipto/quadratic-solver",
   "devDependencies": {
     "jest": "^24.8.0"
-  }
+  },
+  "dependencies": {}
 }
