@@ -1,13 +1,4 @@
 pipeline:
-  restore-cache:
-    image: drillster/drone-volume-cache
-    restore: true
-    mount:
-      - ./.yarn-cache
-      - ./node_modules
-    volumes:
-      - /tmp/cache:/cache
-
   install:
     image: node
     commands:
@@ -20,14 +11,3 @@ pipeline:
     group: tests
     commands:
       - npm test
-
-  rebuild-cache:
-    image: drillster/drone-volume-cache
-    rebuild: true
-    mount:
-      - ./.yarn-cache
-      - ./node_modules
-    volumes:
-      - /tmp/cache:/cache
-    when:
-      branch: master
