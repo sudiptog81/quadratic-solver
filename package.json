@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sudiptog81/quadratic-solver.git"
+    "url": "git+https://git.ghosh.pro/sudipto/quadratic-solver.git"
   },
   "keywords": [
     "quadratic",
@@ -19,9 +19,9 @@
   "author": "Sudipto Ghosh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sudiptog81/quadratic-solver/issues"
+    "url": "https://git.ghosh.pro/sudipto/quadratic-solver/issues"
   },
-  "homepage": "https://github.com/sudiptog81/quadratic-solver#readme",
+  "homepage": "https://git.ghosh.pro/sudipto/quadratic-solver",
   "devDependencies": {
     "jest": "^24.8.0"
   }
