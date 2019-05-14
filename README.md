@@ -10,11 +10,24 @@ This NodeJS module brings the ability of finding roots of a quadratic equation b
 
 ## Example Usage
 
+### NodeJS ES6 Module
+
 ```js
-const qs = require("quadratic-solver");
-console.log(qs.GetVersion());
-const rootsArr = qs.QuadSolver(2, 5, -3);
+import { QuadSolver, GetVersion } from "quadratic-solver";
+console.log(GetVersion());
+const rootsArr = QuadSolver(2, 5, -3);
 rootsArr.map(root => console.log(`Root: ${root}`));
+```
+
+### Browser Import
+
+```html
+<script src="https://unpkg.com/quadratic-solver/dist/quadratic-solver.js"></script>
+<script>
+    console.log(quadSolver.GetVersion());
+    const rootsArr = quadSolver.QuadSolver(2, 5, -3);
+    rootsArr.map(root => console.log(`Root: ${root}`));
+</script>
 ```
 
 ## Methods
