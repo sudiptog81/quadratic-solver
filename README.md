@@ -8,7 +8,7 @@
 
 This NodeJS module brings the ability of finding roots of a quadratic equation by simply requiring it :)
 
-#### Example Usage
+## Example Usage
 
 ```js
 const qs = require("quadratic-solver");
@@ -17,8 +17,59 @@ const rootsArr = qs.QuadSolver(2, 5, -3);
 rootsArr.map(root => console.log(`Root: ${root}`));
 ```
 
-**_Note:_** Citardauq formula available as `qs.QuadSolverCitardauq()`
+## Methods
 
-#### Author
+### QuadSolver(a, b, c)
 
-Sudipto Ghosh ([sudipto.ghosh.pro](https://sudipto.ghosh.pro))
+#### Arguments
+
+- **a**: coefficent of the squared term
+- **b**: coefficient of the linear term
+- **c**: constant with its sign
+
+#### Return Value
+
+- **when both roots are real**: `Array[2]` with the roots of the equation
+- **when only one root is real**: `Array[2]` wherein the first element is the real root and the other element is a warning
+- **when both roots are imaginary**: `Array[2]` in which both elements are warnings
+
+### CompleteSquare(a, b, c)
+
+#### Arguments
+
+- **a**: coefficent of the squared term
+- **b**: coefficient of the linear term
+- **c**: constant with its sign
+
+#### Return Value
+
+- **when both roots are real**: `Array[2]` with the solutions for the equation
+- **when both roots are imaginary**: `Array[2]` with both elements are in which both elements are `NaN`
+
+### QuadSolverCitardauq(a, b, c)
+
+#### Arguments
+
+Same as QuadSolver(a, b, c)
+
+#### Return Value
+
+Same as QuadSolver(a, b, c)
+
+### GetVersion()
+
+#### Arguments
+
+No arguments are required
+
+#### Return Value
+
+String containing name and version of the package in `quadratic-solver v0.0.x` format.
+
+## Author
+
+[Sudipto Ghosh](https://sudipto.ghosh.pro)
+
+## License
+
+Source code is distributed under the MIT License
