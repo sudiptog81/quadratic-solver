@@ -10,7 +10,10 @@ pipeline:
     image: node
     group: tests
     environment:
-      CODECOV_TOKEN:
-        from_secret: CODECOV_TOKEN
+      - CODECOV_TOKEN=$$CODECOV_TOKEN
+    build_args_from_env:
+      - CODECOV_TOKEN
+    secrets:
+      - CODECOV_TOKEN
     commands:
       - npm test

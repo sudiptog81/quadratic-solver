@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/quadratic-solver.svg?logo=npm&style=flat-square)](https://www.npmjs.com/package/quadratic-solver)
 [![Drone Status](https://img.shields.io/drone/build/sudipto/quadratic-solver.svg?logo=drone&server=https%3A%2F%2Fci.ghosh.pro&style=flat-square&label=build)](https://ci.ghosh.pro/sudipto/quadratic-solver)
 [![Travis Status](https://img.shields.io/travis/sudiptog81/quadratic-solver.svg?logo=travis&style=flat-square&label=build)](https://travis-ci.org/sudiptog81/quadratic-solver)
+[![Codecov](https://img.shields.io/codecov/c/github/sudiptog81/quadratic-solver.svg?style=flat-square)](https://codecov.io/gh/sudiptog81/quadratic-solver)
 [![Dependencies](https://img.shields.io/david/sudiptog81/quadratic-solver.svg?style=flat-square)](https://git.ghosh.pro/sudipto/quadratic-solver/src/branch/master/package.json)
 
 This NodeJS module brings the ability of finding roots of a quadratic equation by simply requiring it :)
