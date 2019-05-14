@@ -7,6 +7,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "quadratic-solver.js",
     libraryTarget: "var",
-    library: "quadraticSolver"
+    library: "qs"
   },
 };

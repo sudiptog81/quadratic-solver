@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-import { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion } from "quadratic-solver";
+const { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion } = require("quadratic-solver");
 
 test("Standard Quadratic Equation", () => {
   expect(QuadSolver(2, 5, -3)).toStrictEqual([0.5, -3]);
