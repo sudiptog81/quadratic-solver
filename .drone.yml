@@ -9,5 +9,8 @@ pipeline:
   test:
     image: node
     group: tests
+    environment:
+      CODECOV_TOKEN:
+        from_secret: CODECOV_TOKEN
     commands:
       - npm test

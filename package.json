@@ -4,7 +4,7 @@
   "description": "Quadratic Equation Solver",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest && codecov"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://git.ghosh.pro/sudipto/quadratic-solver",
   "devDependencies": {
+    "codecov": "^3.4.0",
     "jest": "^24.8.0"
   },
   "dependencies": {},
@@ -33,5 +34,9 @@
     "main.test.js",
     "package.json",
     "README.md"
-  ]
+  ],
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }
