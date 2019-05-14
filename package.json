@@ -1,14 +1,11 @@
 {
   "name": "quadratic-solver",
-  "version": "0.0.9",
+  "version": "0.0.8",
   "description": "Quadratic Equation Solver",
-  "main": "lib/index.js",
-  "module": "index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "babel . -d lib && webpack && jest && codecov",
-    "jest": "jest",
-    "webpack": "webpack",
-    "babel": "babel . -d lib"
+    "test": "webpack && jest && codecov",
+    "jest": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,7 +24,6 @@
   },
   "homepage": "https://github.com/sudiptog81/quadratic-solver",
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "babel-core": "^6.26.3",

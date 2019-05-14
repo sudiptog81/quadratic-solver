@@ -19,15 +19,6 @@ const rootsArr = QuadSolver(2, 5, -3);
 rootsArr.map(root => console.log(`Root: ${root}`));
 ```
 
-### CommonJS Module
-
-```js
-const { QuadSolver, GetVersion } = require("quadratic-solver");
-console.log(GetVersion());
-const rootsArr = QuadSolver(2, 5, -3);
-rootsArr.map(root => console.log(`Root: ${root}`));
-```
-
 ### Browser Import
 
 ```html
