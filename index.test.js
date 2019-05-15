@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-import { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion } from "quadratic-solver";
+import { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion, Solver } from "quadratic-solver";
 import { version } from "./package.json";
 
 test("Standard Quadratic Equation", () => {
@@ -23,4 +23,9 @@ test("Completing the Square", () => {
 
 test("Version Output", () => {
   expect(GetVersion()).toBe(`quadratic-solver v${version}`);
+});
+
+test("Solver Class", () => {
+  const solver = new Solver(2, 5, -3);
+  expect(solver.versionMethod()).toBe(version);
 });

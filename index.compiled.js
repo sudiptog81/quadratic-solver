@@ -3,11 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.GetVersion = exports.CompleteSquare = exports.QuadSolverCitardauq = exports.QuadSolver = void 0;
+exports.Solver = exports.GetVersion = exports.CompleteSquare = exports.QuadSolverCitardauq = exports.QuadSolver = void 0;
 
 var _package = require("./package.json");
 
-/* eslint-disable no-unused-vars */
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 var QuadSolver = function QuadSolver(a, b, c) {
   if (Math.pow(b, 2) - 4 * a * c < 0) {
     return ["No Real Roots", "No Real Roots"];
@@ -47,3 +52,27 @@ var GetVersion = function GetVersion() {
 };
 
 exports.GetVersion = GetVersion;
+
+var Solver =
+/*#__PURE__*/
+function () {
+  function Solver(a, b, c) {
+    _classCallCheck(this, Solver);
+
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    this.version = _package.version;
+  }
+
+  _createClass(Solver, [{
+    key: "versionMethod",
+    value: function versionMethod() {
+      return this.version;
+    }
+  }]);
+
+  return Solver;
+}();
+
+exports.Solver = Solver;

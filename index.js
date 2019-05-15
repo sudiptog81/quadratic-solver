@@ -63,3 +63,16 @@ export const CompleteSquare = (a, b, c) => {
 };
 
 export const GetVersion = () => `quadratic-solver v${version}`;
+
+export class Solver {
+  constructor(a, b, c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    this.version = version;
+  }
+
+  versionMethod() {
+    return this.version;
+  }
+}
