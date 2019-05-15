@@ -79,6 +79,20 @@ No arguments are required
 
 String containing name and version of the package in `quadratic-solver v0.0.x` format.
 
+## ES6 Classes
+
+### Solver(a, b, c)
+
+- **a**: coefficent of the squared term; default: 2
+- **b**: coefficient of the linear term; default: 5
+- **c**: constant with its sign; default: -3
+
+#### Methods
+
+##### versionMethod()
+
+Returns the package version.
+
 ## Author
 
 [Sudipto Ghosh](https://sudipto.ghosh.pro)
