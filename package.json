@@ -6,7 +6,7 @@
   "module": "index.js",
   "scripts": {
     "build": "npm run babel && npm run webpack",
-    "test": "npm run babel && npm run webpack && npm run jest && codecov",
+    "test": "npm run build && npm run jest && codecov",
     "jest": "jest",
     "webpack": "webpack",
     "babel": "babel index.js --out-file index.compiled.js"
