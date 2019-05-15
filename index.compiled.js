@@ -56,7 +56,11 @@ exports.GetVersion = GetVersion;
 var Solver =
 /*#__PURE__*/
 function () {
-  function Solver(a, b, c) {
+  function Solver() {
+    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
+    var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 5;
+    var c = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -3;
+
     _classCallCheck(this, Solver);
 
     this.a = a;
