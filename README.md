@@ -85,4 +85,4 @@ String containing name and version of the package in `quadratic-solver v0.0.x` f
 
 ## License
 
-Source code is distributed under the MIT License
+Source code distributed under the MIT License
