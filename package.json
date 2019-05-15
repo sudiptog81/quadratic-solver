@@ -1,13 +1,13 @@
 {
   "name": "quadratic-solver",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Quadratic Equation Solver",
   "main": "index",
   "scripts": {
     "build": "npm run lint && npm run babel && npm run webpack",
     "test": "npm run build && npm run jest && codecov",
     "jest": "jest",
-    "lint": "eslint index*.mjs",
+    "lint": "eslint --fix index.mjs",
     "webpack": "webpack",
     "babel": "babel index.mjs --out-file index.js"
   },
