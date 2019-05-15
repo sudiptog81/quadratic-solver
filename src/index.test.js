@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 import { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion, Solver } from "quadratic-solver";
-import { version } from "./package.json";
+import { version } from "../package.json";
 
 describe("Standard Quadratic Equation", () => {
   test("both real roots", () => {

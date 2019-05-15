@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { version } from "./package.json";
+import { version } from "../package.json";
 
 export const QuadSolver = (a, b, c) => {
   if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
