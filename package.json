@@ -1,6 +1,6 @@
 {
   "name": "quadratic-solver",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Quadratic Equation Solver",
   "main": "index.compiled.js",
   "module": "index.js",
@@ -34,7 +34,7 @@
     "@babel/preset-env": "^7.4.4",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
-    "codecov": "^3.4.0",
+    "codecov": "^3.5.0",
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
     "webpack": "^4.31.0",
