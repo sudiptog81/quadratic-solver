@@ -1,12 +1,15 @@
 {
   "name": "quadratic-solver",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Quadratic Equation Solver",
-  "main": "index.js",
+  "main": "index.compiled.js",
+  "module": "index.js",
   "scripts": {
-    "test": "webpack && jest && codecov",
+    "build": "npm run babel && npm run webpack",
+    "test": "npm run babel && npm run webpack && npm run jest && codecov",
     "jest": "jest",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "babel": "babel index.js --out-file index.compiled.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +28,9 @@
   },
   "homepage": "https://github.com/sudiptog81/quadratic-solver",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "babel-core": "^6.26.3",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "codecov": "^3.4.0",
@@ -39,6 +42,7 @@
   "files": [
     ".gitignore",
     "LICENSE.md",
+    "index.compiled.js",
     "index.js",
     "index.test.js",
     "package.json",
@@ -49,7 +53,7 @@
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
     "transform": {
-      ".js$": "babel-jest"
+      "^.+\\.jsx?$": "babel-jest"
     }
   }
 }

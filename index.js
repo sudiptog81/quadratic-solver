@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
+import { version } from "./package.json";
 
-const QuadSolver = (a, b, c) => {
+export const QuadSolver = (a, b, c) => {
   if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
     return [
       "No Real Roots",
@@ -25,7 +26,7 @@ const QuadSolver = (a, b, c) => {
   // TODO: Add support for returning complex roots
 };
 
-const QuadSolverCitardauq = (a, b, c) => {
+export const QuadSolverCitardauq = (a, b, c) => {
   if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
     return [
       "No Real Roots",
@@ -50,7 +51,7 @@ const QuadSolverCitardauq = (a, b, c) => {
   // TODO: Add support for returning complex roots
 };
 
-const CompleteSquare = (a, b, c) => {
+export const CompleteSquare = (a, b, c) => {
   b = b / a; c = c / a;
 
   return [
@@ -61,11 +62,4 @@ const CompleteSquare = (a, b, c) => {
   // TODO: Add support for returning complex roots instead of NaN
 };
 
-const GetVersion = () => `quadratic-solver v${require("./package.json").version}`;
-
-module.exports = {
-  QuadSolver,
-  QuadSolverCitardauq,
-  CompleteSquare,
-  GetVersion
-};
+export const GetVersion = () => `quadratic-solver v${version}`;

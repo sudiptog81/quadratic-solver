@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 
-const { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion } = require("quadratic-solver");
+import { QuadSolver, QuadSolverCitardauq, CompleteSquare, GetVersion } from "quadratic-solver";
+import { version } from "./package.json";
 
 test("Standard Quadratic Equation", () => {
   expect(QuadSolver(2, 5, -3)).toStrictEqual([0.5, -3]);
@@ -21,5 +22,5 @@ test("Completing the Square", () => {
 });
 
 test("Version Output", () => {
-  expect(GetVersion()).toBe(`quadratic-solver v${require("./package.json").version}`);
+  expect(GetVersion()).toBe(`quadratic-solver v${version}`);
 });
