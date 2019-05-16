@@ -10,4 +10,7 @@ describe("Standard Quadratic Equation", () => {
   test("no real root", () => {
     expect(QuadSolver(2, 1, 2)).toStrictEqual(["No Real Roots", "No Real Roots"]);
   });
+  test("corner cases", () => {
+    expect(QuadSolver(0, 2, 3)).toStrictEqual([-1.5, "Only One Root"]);
+  });
 });

@@ -1,5 +1,11 @@
+import QuadSolverCitardauq from "./QuadSolverCitardauq";
+
 const QuadSolver = (a, b, c) => {
-  if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
+  if (a === 0) {
+    return QuadSolverCitardauq(a, b, c);
+  }
+
+  else if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
     return [
       "No Real Roots",
       "No Real Roots"

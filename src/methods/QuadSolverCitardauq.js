@@ -1,15 +1,15 @@
 const QuadSolverCitardauq = (a, b, c) => {
-  if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
+  if (a === 0 || (Math.pow(b, 2) - (4 * a * c)) == 0) {
     return [
-      "No Real Roots",
-      "No Real Roots"
+      ((2 * c) / (-1 * b - Math.sqrt(Math.pow(b, 2) - (4 * a * c)))),
+      "Only One Root"
     ];
   }
 
-  else if ((Math.pow(b, 2) - (4 * a * c)) == 0) {
+  else if ((Math.pow(b, 2) - (4 * a * c)) < 0) {
     return [
-      ((-1 * b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a)),
-      "Only One Root"
+      "No Real Roots",
+      "No Real Roots"
     ];
   }
 

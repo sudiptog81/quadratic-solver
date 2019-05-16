@@ -1,6 +1,6 @@
 {
   "name": "quadratic-solver",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Quadratic Equation Solver",
   "main": "lib/index.js",
   "scripts": {
@@ -34,6 +34,7 @@
     "codecov": "^3.5.0",
     "eslint": "^5.16.0",
     "eslint-plugin-jest": "^22.5.1",
+    "esm": "^3.2.23",
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
     "webpack": "^4.31.0",

@@ -10,4 +10,10 @@ describe("Completing the Square", () => {
   test("no real solution", () => {
     expect(CompleteSquare(5, 20, 32)).toStrictEqual([NaN, NaN]);
   });
+  test("corner cases", () => {
+    expect(CompleteSquare(0, 2, 3)).toStrictEqual([
+      "ValueError: Algorithm involves division by Zero",
+      "ValueError: Algorithm involves division by Zero"
+    ]);
+  });
 });

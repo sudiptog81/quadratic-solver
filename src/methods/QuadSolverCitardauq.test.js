@@ -10,4 +10,7 @@ describe("Citardauq Quadratic Equation", () => {
   test("no real root", () => {
     expect(QuadSolverCitardauq(2, 1, 2)).toStrictEqual(["No Real Roots", "No Real Roots"]);
   });
+  test("corner cases", () => {
+    expect(QuadSolverCitardauq(0, 2, 3)).toStrictEqual([-1.5, "Only One Root"]);
+  });
 });
