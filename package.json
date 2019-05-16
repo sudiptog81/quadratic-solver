@@ -1,13 +1,13 @@
 {
   "name": "quadratic-solver",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Quadratic Equation Solver",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run lint && npm run babel && npm run pack && npm run lint",
     "test": "npm run build && npm run jest && codecov",
-    "jest": "jest",
-    "lint": "eslint --fix src/*.js lib/*.js dist/*.js",
+    "jest": "jest --verbose",
+    "lint": "eslint --fix src/**/*.js lib/**/*.js dist/*.js",
     "pack": "webpack",
     "babel": "babel src -d lib"
   },
@@ -46,8 +46,8 @@
     "LICENSE.md",
     "README.md",
     "dist/*",
-    "lib/*",
-    "src/*"
+    "lib/**/*",
+    "src/**/*"
   ],
   "jest": {
     "coverageDirectory": "./coverage/",
