@@ -13,7 +13,7 @@ This JavaScript library-slash-module brings the ability of finding roots of a qu
 ### Browser Import
 
 ```html
-<script src="https://unpkg.com/quadratic-solver@latest/dist/quadratic-solver.js"></script>
+<script src="https://unpkg.com/quadratic-solver"></script>
 <script>
     console.log(qs.GetVersion());
     const rootsArr = qs.QuadSolver(2, 5, -3);
