@@ -6,7 +6,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/sudiptog81/quadratic-solver.svg?style=flat-square)](https://codecov.io/gh/sudiptog81/quadratic-solver)
 [![Dependencies](https://img.shields.io/david/sudiptog81/quadratic-solver.svg?style=flat-square)](https://git.ghosh.pro/sudipto/quadratic-solver/src/branch/master/package.json)
 
-This NodeJS module brings the ability of finding roots of a quadratic equation by simply requiring it :)
+This JavaScript library-slash-module brings the ability of finding roots of a quadratic equation by simply requiring it :)
 
 ## Example Usage
 
@@ -36,62 +36,62 @@ rootsArr.map(root => console.log(`Root: ${root}`));
 
 #### Arguments
 
-- **a**: coefficent of the squared term
-- **b**: coefficient of the linear term
-- **c**: constant with its sign
+- **a**: coefficent of the squared term.
+- **b**: coefficient of the linear term.
+- **c**: constant with its sign.
 
 #### Return Value
 
-- **when both roots are real**: `Array[2]` with the roots of the equation
-- **when only one root is real**: `Array[2]` wherein the first element is the real root and the other element is a warning
-- **when both roots are imaginary**: `Array[2]` in which both elements are warnings
+- **when both roots are real**: `Array[2]` with the roots of the equation.
+- **when only one root is real**: `Array[2]` wherein the first element is the real root and the other element is a warning.
+- **when both roots are imaginary**: `Array[2]` in which both elements are warnings.
 
 ### CompleteSquare(a, b, c)
 
 #### Arguments
 
-- **a**: coefficent of the squared term
-- **b**: coefficient of the linear term
-- **c**: constant with its sign
+- **a**: coefficent of the squared term.
+- **b**: coefficient of the linear term.
+- **c**: constant with its sign.
 
 #### Return Value
 
-- **when both roots are real**: `Array[2]` with the solutions for the equation
-- **when both roots are imaginary**: `Array[2]` with both elements are in which both elements are `NaN`
+- **when both roots are real**: `Array[2]` with the solutions for the equation.
+- **when both roots are imaginary**: `Array[2]` with both elements are in which both elements are `NaN`.
 
 ### QuadSolverCitardauq(a, b, c)
 
 #### Arguments
 
-Same as QuadSolver(a, b, c)
+Same as QuadSolver(a, b, c).
 
 #### Return Value
 
-Same as QuadSolver(a, b, c)
+Same as QuadSolver(a, b, c).
 
 ### GetVersion()
 
 #### Arguments
 
-No arguments are required
+No arguments are required.
 
 #### Return Value
 
-String containing name and version of the package in `quadratic-solver v0.0.x` format.
+String containing name and version of the package in `quadratic-solver v0.x.x` format.
 
 ## ES6 Classes
 
 ### Solver(a, b, c)
 
-- **a**: coefficent of the squared term; default: 2
-- **b**: coefficient of the linear term; default: 5
-- **c**: constant with its sign; default: -3
+#### Properties
+
+- **a**: coefficent of the squared term; default: 2.
+- **b**: coefficient of the linear term; default: 5.
+- **c**: constant with its sign; default: -3.
 
 #### Methods
 
-##### versionMethod()
-
-Returns the package version.
+- **versionMethod()**: returns the package version.
 
 ## Author
 
@@ -99,4 +99,4 @@ Returns the package version.
 
 ## License
 
-Source code distributed under the MIT License
+Source code distributed under the MIT License.
