@@ -1,5 +1,5 @@
 import { version } from "../../package.json";
 
-const GetVersion = () => `quadratic-solver v${version}`;
+const getVersion = () => `quadratic-solver v${version}`;
 
-export default GetVersion;
+export default getVersion;

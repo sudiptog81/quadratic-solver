@@ -1,4 +1,4 @@
-import QuadSolver from "./QuadSolver";
+import QuadSolver from "./quadSolver";
 
 describe("Standard Quadratic Equation", () => {
   test("both real roots", () => {

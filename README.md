@@ -15,8 +15,8 @@ This JavaScript library-slash-module brings the ability of finding roots of a qu
 ```html
 <script src="https://unpkg.com/quadratic-solver"></script>
 <script>
-    console.log(qs.GetVersion());
-    const rootsArr = qs.QuadSolver(2, 5, -3);
+    console.log(qs.getVersion());
+    const rootsArr = qs.quadSolver(2, 5, -3);
     rootsArr.map(root => console.log(`Root: ${root}`));
 </script>
 ```
@@ -24,15 +24,15 @@ This JavaScript library-slash-module brings the ability of finding roots of a qu
 ### NodeJS Module
 
 ```js
-const { QuadSolver, GetVersion } = require("quadratic-solver");
-console.log(GetVersion());
-const rootsArr = QuadSolver(2, 5, -3);
+const { quadSolver, getVersion } = require("quadratic-solver");
+console.log(getVersion());
+const rootsArr = quadSolver(2, 5, -3);
 rootsArr.map(root => console.log(`Root: ${root}`));
 ```
 
 ## Methods
 
-### QuadSolver(a, b, c)
+### quadSolver(a, b, c)
 
 #### Arguments
 
@@ -46,9 +46,9 @@ rootsArr.map(root => console.log(`Root: ${root}`));
 - **when only one root is real**: `Array[2]` wherein the first element is the real root and the other element is a warning.
 - **when both roots are imaginary**: `Array[2]` in which both elements are warnings.
 
-**Note**: If `a` is equal to `0`, `QuadSolverCitardauq()` will be called automatically with the arguments as provided.
+**Note**: If `a` is equal to `0`, `quadSolverCitardauq()` will be called automatically with the arguments as provided.
 
-### CompleteSquare(a, b, c)
+### completeSquare(a, b, c)
 
 #### Arguments
 
@@ -61,17 +61,17 @@ rootsArr.map(root => console.log(`Root: ${root}`));
 - **when both roots are real**: `Array[2]` with the solutions for the equation.
 - **when both roots are imaginary**: `Array[2]` with both elements are in which both elements are `NaN`.
 
-### QuadSolverCitardauq(a, b, c)
+### quadSolverCitardauq(a, b, c)
 
 #### Arguments
 
-Same as QuadSolver(a, b, c).
+Same as quadSolver(a, b, c).
 
 #### Return Value
 
-Same as QuadSolver(a, b, c).
+Same as quadSolver(a, b, c).
 
-### GetVersion()
+### getVersion()
 
 #### Arguments
 
@@ -93,9 +93,21 @@ String containing name and version of the package in `quadratic-solver v0.x.x` f
 
 #### Methods
 
-- **solve()**: returns output of `QuadSolver()` with properties of the instance.
-- **completeSquare()**: returns output of `CompleteSquare()` with properties of the instance.
-- **versionMethod()**: returns the output of `GetVersion()`.
+- **solve()**: returns output of `quadSolver()` with properties of the instance.
+- **completeSquare()**: returns output of `completeSquare()` with properties of the instance.
+- **versionMethod()**: returns the output of `getVersion()`.
+
+### MatrixSolver([[a, b, c], [d, e, f], ...])
+
+#### Properties
+
+- **matrix**: array of arrays containing the coefficients of the quadratic and linear terms, followed by the constant (in that order); default: `[[2, 5, -3]]`.
+
+#### Methods
+
+- **solveAll()**: returns output of `quadSolver()` for each array in an array of arrays.
+- **completeSquareAll()**: returns output of `completeSquare()` for each array in an array of arrays.
+- **versionMethod()**: returns the output of `getVersion()`.
 
 ## Author
 

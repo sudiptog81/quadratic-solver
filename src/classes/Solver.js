@@ -1,6 +1,6 @@
-import GetVersion from "./../methods/GetVersion";
-import QuadSolver from "./../methods/QuadSolver";
-import CompleteSquare from "./../methods/CompleteSquare";
+import getVersion from "./../methods/getVersion";
+import quadSolver from "./../methods/quadSolver";
+import completeSquare from "./../methods/completeSquare";
 
 export default class Solver {
   constructor(a = 2, b = 5, c = -3) {
@@ -10,14 +10,14 @@ export default class Solver {
   }
 
   solve() {
-    return QuadSolver(this.a, this.b, this.c);
+    return quadSolver(this.a, this.b, this.c);
   }
 
   completeSquare() {
-    return CompleteSquare(this.a, this.b, this.c);
+    return completeSquare(this.a, this.b, this.c);
   }
 
   versionMethod() {
-    return GetVersion();
+    return getVersion();
   }
 }

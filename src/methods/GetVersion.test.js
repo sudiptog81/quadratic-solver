@@ -1,4 +1,4 @@
-import GetVersion from "./GetVersion";
+import GetVersion from "./getVersion";
 import { version } from "../../package.json";
 
 describe("Version Output", () => {

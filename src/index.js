@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import Solver from "./classes/Solver";
-import GetVersion from "./methods/GetVersion";
-import QuadSolver from "./methods/QuadSolver";
-import CompleteSquare from "./methods/CompleteSquare";
-import QuadSolverCitardauq from "./methods/QuadSolverCitardauq";
+import MatrixSolver from "./classes/MatrixSolver";
+import getVersion from "./methods/GetVersion";
+import quadSolver from "./methods/QuadSolver";
+import completeSquare from "./methods/CompleteSquare";
+import quadSolverCitardauq from "./methods/QuadSolverCitardauq";
 
 export {
-  Solver, GetVersion, QuadSolver, QuadSolverCitardauq, CompleteSquare
+  Solver, MatrixSolver, getVersion, quadSolver, quadSolverCitardauq, completeSquare
 };
