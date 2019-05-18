@@ -111,7 +111,7 @@ String containing name and version of the package in `quadratic-solver v0.x.x` f
 
 ## Author
 
-[Sudipto Ghosh](https://sudipto.ghosh.pro)
+[Sudipto Ghosh](https://sudipto.ghosh.pro) sudipto(at)ghosh(dot)pro
 
 ## License
 
