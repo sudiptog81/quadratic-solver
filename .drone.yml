@@ -2,6 +2,10 @@
 kind: pipeline
 name: default
 
+platform:
+  os: linux
+  arch: amd64
+
 steps:
 - name: install
   image: node
@@ -15,13 +19,14 @@ steps:
 
 - name: test
   image: node
+  commands:
+  - npm test
   environment:
     CODECOV_TOKEN:
       from_secret: CODECOV_TOKEN
-  commands:
-  - npm test
+
 ---
 kind: signature
-hmac: b7512881f0a39cd10f60ec54e753259efc08d07b76c9040977d76bab726114d9
+hmac: 4ca56c01a761701988d0a34242add4e6359ba421e99f0c157a84b00115da1082
 
 ...
