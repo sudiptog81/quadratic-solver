@@ -1,19 +1,27 @@
-pipeline:
-  install:
-    image: node
-    commands:
-      - node -v
-      - npm -v
-      - npm install
+---
+kind: pipeline
+name: default
 
-  test:
-    image: node
-    group: tests
-    environment:
-      - CODECOV_TOKEN=$$CODECOV_TOKEN
-    build_args_from_env:
-      - CODECOV_TOKEN
-    secrets:
-      - CODECOV_TOKEN
-    commands:
-      - npm test
+steps:
+- name: install
+  image: node
+  commands:
+  - npm install
+
+- name: build
+  image: node
+  commands:
+  - npm run build
+
+- name: test
+  image: node
+  environment:
+    CODECOV_TOKEN:
+      from_secret: CODECOV_TOKEN
+  commands:
+  - npm test
+---
+kind: signature
+hmac: b7512881f0a39cd10f60ec54e753259efc08d07b76c9040977d76bab726114d9
+
+...
