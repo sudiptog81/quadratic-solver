@@ -1,3 +1,10 @@
+/**
+ * Solve a given quadratic equation by the Citardauq Method
+ * @param {number} a coefficient of the quadratic term
+ * @param {number} b coefficient of the linear term
+ * @param {number} c constant term
+ * @returns {number[] | string[] | [number, string]} solutions
+ */
 const quadSolverCitardauq = (a, b, c) => {
   if (a === 0 || ((b ** 2) - (4 * a * c)) == 0) {
     return [

@@ -1,3 +1,10 @@
+/**
+ * Complete the Square for a quadratic equation
+ * @param {number} a coefficient of the quadratic term
+ * @param {number} b coefficient of the linear term
+ * @param {number} c constant term
+ * @returns {number[] | string[]} solutions
+ */
 const completeSquare = (a, b, c) => {
   if (a === 0) {
     return [

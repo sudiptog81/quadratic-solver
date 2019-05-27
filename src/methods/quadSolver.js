@@ -1,5 +1,12 @@
 import quadSolverCitardauq from "./quadSolverCitardauq";
 
+/**
+ * Solve a given quadratic equation
+ * @param {number} a coefficient of the quadratic term
+ * @param {number} b coefficient of the linear term
+ * @param {number} c constant term
+ * @returns {number[] | string[] | [number, string]} solutions
+ */
 const quadSolver = (a, b, c) => {
   if (a === 0) {
     return quadSolverCitardauq(a, b, c);

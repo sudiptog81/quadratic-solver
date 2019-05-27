@@ -1,6 +1,6 @@
 {
   "name": "quadratic-solver",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Quadratic Equation Solver",
   "main": "lib/index.js",
   "scripts": {
