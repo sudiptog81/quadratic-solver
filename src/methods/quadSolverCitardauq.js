@@ -4,6 +4,7 @@
  * @param {number} b coefficient of the linear term
  * @param {number} c constant term
  * @returns {number[] | string[] | [number, string]} solutions
+ * @author sudipto
  */
 const quadSolverCitardauq = (a, b, c) => {
   if (a === 0 || ((b ** 2) - (4 * a * c)) == 0) {

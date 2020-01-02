@@ -4,6 +4,7 @@
  * @param {number} b coefficient of the linear term
  * @param {number} c constant term
  * @returns {number[] | string[]} solutions
+ * @author sudipto
  */
 const completeSquare = (a, b, c) => {
   if (a === 0) {
